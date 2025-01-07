@@ -1,39 +1,122 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Mapa Interactivo</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Folium utiliza estos estilos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
-    <style>
-        /* Estilo para el mapa */
-        #map {
-            width: 100%;
-            height: 100vh; /* Altura completa de la ventana */
-        }
-    </style>
-</head>
-<body>
-    <h1>Mapa Interactivo</h1>
-    <!-- Div para el mapa -->
-    <div id="map"></div>
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    
+        &lt;script&gt;
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        &lt;/script&gt;
+    
+    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
+    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_7f0c352d740968ca7ed2bfb28fe85e3f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+        
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css&quot;/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_7f0c352d740968ca7ed2bfb28fe85e3f&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_7f0c352d740968ca7ed2bfb28fe85e3f = L.map(
+                &quot;map_7f0c352d740968ca7ed2bfb28fe85e3f&quot;,
+                {
+                    center: [9.796528816223145, -74.78878021240234],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  &quot;zoom&quot;: 12,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
 
-    <!-- Scripts necesarios para Leaflet -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
-    <script>
-        // Inicializa el mapa en una ubicación específica
-        var map = L.map('map').setView([10.9878, -74.7889], 12); // Coordenadas de ejemplo (Barranquilla)
+                }
+            );
 
-        // Capa de mapas de OpenStreetMap
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors'
-        }).addTo(map);
+            
 
-        // Marcador de ejemplo
-        L.marker([10.9878, -74.7889]).addTo(map)
-            .bindPopup('¡Hola! Este es un mapa interactivo.')
-            .openPopup();
-    </script>
-</body>
-</html>
+        
+    
+            var tile_layer_6fa8bd7ba8a26acb58cedd1f8d4e0b3e = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_6fa8bd7ba8a26acb58cedd1f8d4e0b3e.addTo(map_7f0c352d740968ca7ed2bfb28fe85e3f);
+        
+    
+            var marker_cluster_42f32db60a7766da23ffb75133b568d4 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_082d0da144505b304837a26c914106d6 = L.marker(
+                [9.796528816223145, -74.78878021240234],
+                {
+}
+            ).addTo(marker_cluster_42f32db60a7766da23ffb75133b568d4);
+        
+    
+        var popup_961166d3578cd8da86e865e30e19ddbf = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_cfe1dbd32b4ba571e6ee30f5d94b86c8 = $(`&lt;div id=&quot;html_cfe1dbd32b4ba571e6ee30f5d94b86c8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;IdCiclo:&lt;/b&gt; 3640&lt;br&gt;     &lt;b&gt;CicloAnterior:&lt;/b&gt; 3840&lt;br&gt;     &lt;b&gt;Dirección:&lt;/b&gt; CL 23 KR 9 - 42&lt;br&gt;     &lt;b&gt;IdContrato:&lt;/b&gt; 66612072&lt;br&gt;     &lt;b&gt;Fecha de cambio:&lt;/b&gt; 2024-12-24 00:00:00     &lt;/div&gt;`)[0];
+                popup_961166d3578cd8da86e865e30e19ddbf.setContent(html_cfe1dbd32b4ba571e6ee30f5d94b86c8);
+            
+        
+
+        marker_082d0da144505b304837a26c914106d6.bindPopup(popup_961166d3578cd8da86e865e30e19ddbf)
+        ;
+
+        
+    
+    
+            marker_cluster_42f32db60a7766da23ffb75133b568d4.addTo(map_7f0c352d740968ca7ed2bfb28fe85e3f);
+        
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
