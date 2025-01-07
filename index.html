@@ -113,7 +113,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_78e7abc070ef3ba34b0777d7b37de49e {
+                #map_8f2381d7f1f617b506762f8461ffcc6e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -126,18 +126,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_78e7abc070ef3ba34b0777d7b37de49e" ></div>
+            <div class="folium-map" id="map_8f2381d7f1f617b506762f8461ffcc6e" ></div>
         
 </body>
 <script>
     
     
-            var map_78e7abc070ef3ba34b0777d7b37de49e = L.map(
-                "map_78e7abc070ef3ba34b0777d7b37de49e",
+            var map_8f2381d7f1f617b506762f8461ffcc6e = L.map(
+                "map_8f2381d7f1f617b506762f8461ffcc6e",
                 {
                     center: [9.796528816223145, -74.78878021240234],
                     crs: L.CRS.EPSG3857,
@@ -154,7 +158,7 @@
 
         
     
-            var tile_layer_560b6036e3fa5c2d193893ca3dca4f95 = L.tileLayer(
+            var tile_layer_e8f34d9c7c7f0cc76b2889c4ae1aa450 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -171,40 +175,102 @@
             );
         
     
-            tile_layer_560b6036e3fa5c2d193893ca3dca4f95.addTo(map_78e7abc070ef3ba34b0777d7b37de49e);
+            tile_layer_e8f34d9c7c7f0cc76b2889c4ae1aa450.addTo(map_8f2381d7f1f617b506762f8461ffcc6e);
         
     
-            var marker_cluster_b00a5f6c7713ff72aeba1be806824f1d = L.markerClusterGroup(
+            var marker_cluster_74ba6b433e49e5848a3cc4dc82951600 = L.markerClusterGroup(
                 {
 }
             );
         
     
-            var marker_0c03d47b86bd9e0e84b72642e59202c2 = L.marker(
+            var marker_5550fb2148e3f8268fce44fda6b0f296 = L.marker(
                 [9.796528816223145, -74.78878021240234],
                 {
 }
-            ).addTo(marker_cluster_b00a5f6c7713ff72aeba1be806824f1d);
+            ).addTo(marker_cluster_74ba6b433e49e5848a3cc4dc82951600);
         
     
-        var popup_9ec014c848735843690d3847c5c2d090 = L.popup({
+            var icon_26413e6fa042b8ad1dd0ad8299979cce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5550fb2148e3f8268fce44fda6b0f296.setIcon(icon_26413e6fa042b8ad1dd0ad8299979cce);
+        
+    
+        var popup_cdc932dbb24cc76fd8f78f944aaba8c3 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_24f4ecf4a07c1425710b8e7b5ebf0e4b = $(`<div id="html_24f4ecf4a07c1425710b8e7b5ebf0e4b" style="width: 100.0%; height: 100.0%;">     <b>IdCiclo:</b> 3640<br>     <b>CicloAnterior:</b> 3840<br>     <b>Dirección:</b> CL 23 KR 9 - 42<br>     <b>IdContrato:</b> 66612072<br>     <b>Fecha de cambio:</b> 2024-12-24 00:00:00     </div>`)[0];
-                popup_9ec014c848735843690d3847c5c2d090.setContent(html_24f4ecf4a07c1425710b8e7b5ebf0e4b);
+                var html_60282dbb7ba804e0dfdf3caf874520a3 = $(`<div id="html_60282dbb7ba804e0dfdf3caf874520a3" style="width: 100.0%; height: 100.0%;">     <b>IdCiclo:</b> 3640<br>     <b>CicloAnterior:</b> 3840<br>     <b>Dirección:</b> CL 23 KR 9 - 42<br>     <b>IdContrato:</b> 66612072<br>     <b>Fecha de cambio:</b> 2024-12-24 00:00:00     </div>`)[0];
+                popup_cdc932dbb24cc76fd8f78f944aaba8c3.setContent(html_60282dbb7ba804e0dfdf3caf874520a3);
             
         
 
-        marker_0c03d47b86bd9e0e84b72642e59202c2.bindPopup(popup_9ec014c848735843690d3847c5c2d090)
+        marker_5550fb2148e3f8268fce44fda6b0f296.bindPopup(popup_cdc932dbb24cc76fd8f78f944aaba8c3)
         ;
 
         
     
     
-            marker_cluster_b00a5f6c7713ff72aeba1be806824f1d.addTo(map_78e7abc070ef3ba34b0777d7b37de49e);
+            marker_cluster_74ba6b433e49e5848a3cc4dc82951600.addTo(map_8f2381d7f1f617b506762f8461ffcc6e);
+        
+    
+            var tile_layer_957b909a6a383b0821a1aa83702afdc8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_04d8f379e7cb6f607e6317b9dea8303b = new L.Control.MiniMap(
+                tile_layer_957b909a6a383b0821a1aa83702afdc8,
+                {
+  "position": "bottomright",
+  "width": 150,
+  "height": 150,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -5,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": true,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_8f2381d7f1f617b506762f8461ffcc6e.addControl(mini_map_04d8f379e7cb6f607e6317b9dea8303b);
+        
+    
+            var measure_control_9df58c417192c6751c8d406475a8cd3e = new L.Control.Measure(
+                {
+  "position": "topright",
+  "primaryLengthUnit": "meters",
+  "secondaryLengthUnit": "miles",
+  "primaryAreaUnit": "sqmeters",
+  "secondaryAreaUnit": "acres",
+});
+            map_8f2381d7f1f617b506762f8461ffcc6e.addControl(measure_control_9df58c417192c6751c8d406475a8cd3e);
+
+            // Workaround for using this plugin with Leaflet>=1.8.0
+            // https://github.com/ljagis/leaflet-measure/issues/171
+            L.Control.Measure.include({
+                _setCaptureMarkerIcon: function () {
+                    // disable autopan
+                    this._captureMarker.options.autoPanOnFocus = false;
+                    // default function
+                    this._captureMarker.setIcon(
+                        L.divIcon({
+                            iconSize: this._map.getSize().multiplyBy(2)
+                        })
+                    );
+                },
+            });
+
         
 </script>
 </html>
