@@ -131,6 +131,12 @@
     </style>
 </head>
 <body>
+    <!-- Loader -->
+    <div class="loader-container" id="loader">
+        <span class="loader"></span>
+        <div class="loader-text">Cargando mapa...</div>
+    </div>
+
     <div class="container">
         <div class="title">VISUALIZADOR DE CAMBIOS DE CICLO EN CONTRATOS</div>
         <div class="map-container">
@@ -161,7 +167,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_2673fe5623ea05fdd82ff7ba20075528 {
+                #map_c3389032ebc03af3df2935425c4dfda2 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -182,14 +188,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_2673fe5623ea05fdd82ff7ba20075528" ></div>
+            <div class="folium-map" id="map_c3389032ebc03af3df2935425c4dfda2" ></div>
         
 </body>
 <script>
     
     
-            var map_2673fe5623ea05fdd82ff7ba20075528 = L.map(
-                "map_2673fe5623ea05fdd82ff7ba20075528",
+            var map_c3389032ebc03af3df2935425c4dfda2 = L.map(
+                "map_c3389032ebc03af3df2935425c4dfda2",
                 {
                     center: [9.796528816223145, -74.78878021240234],
                     crs: L.CRS.EPSG3857,
@@ -206,7 +212,7 @@
 
         
     
-            var tile_layer_3619286479d695e04349937fcb312cb2 = L.tileLayer(
+            var tile_layer_0be70adb9418692806b11bef0e8dc565 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -223,10 +229,10 @@
             );
         
     
-            tile_layer_3619286479d695e04349937fcb312cb2.addTo(map_2673fe5623ea05fdd82ff7ba20075528);
+            tile_layer_0be70adb9418692806b11bef0e8dc565.addTo(map_c3389032ebc03af3df2935425c4dfda2);
         
     
-            var marker_cluster_8c8971ae9b5ab9349a6db7d7ebef0190 = L.markerClusterGroup(
+            var marker_cluster_0ca5b1e7ca987df48fbace317e3f1878 = L.markerClusterGroup(
                 {
   "maxClusterRadius": 50,
   "disableClusteringAtZoom": 15,
@@ -235,14 +241,14 @@
             );
         
     
-            var marker_fc60d32809e7a6c427211e369d2b1c12 = L.marker(
+            var marker_133634d9f46560e315c70720195dcd93 = L.marker(
                 [9.796528816223145, -74.78878021240234],
                 {
 }
-            ).addTo(marker_cluster_8c8971ae9b5ab9349a6db7d7ebef0190);
+            ).addTo(marker_cluster_0ca5b1e7ca987df48fbace317e3f1878);
         
     
-            var icon_000b9fbc47e87f4333bc5e6e7dff29c4 = L.AwesomeMarkers.icon(
+            var icon_370d4ec9a2c46b6f139e6d520bd76ae2 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -251,35 +257,35 @@
   "extraClasses": "fa-rotate-0",
 }
             );
-            marker_fc60d32809e7a6c427211e369d2b1c12.setIcon(icon_000b9fbc47e87f4333bc5e6e7dff29c4);
+            marker_133634d9f46560e315c70720195dcd93.setIcon(icon_370d4ec9a2c46b6f139e6d520bd76ae2);
         
     
-        var popup_5b241932ee1825bb150b8a9455539ae1 = L.popup({
+        var popup_6daf64efb711710420ff68608755e863 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_7646e21bf952082523473718be83474c = $(`<div id="html_7646e21bf952082523473718be83474c" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif;">                 <b>IdCiclo:</b> 3640<br>                 <b>CicloAnterior:</b> 3840<br>                 <b>Dirección:</b> CL 23 KR 9 - 42<br>                 <b>IdContrato:</b> 66612072<br>                 <b>Fecha:</b> 2024-12-24 00:00:00             </div>             </div>`)[0];
-                popup_5b241932ee1825bb150b8a9455539ae1.setContent(html_7646e21bf952082523473718be83474c);
+                var html_056bd3ec0e7b18e507bae1b12fe92092 = $(`<div id="html_056bd3ec0e7b18e507bae1b12fe92092" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif;">                 <b>IdCiclo:</b> 3640<br>                 <b>CicloAnterior:</b> 3840<br>                 <b>Dirección:</b> CL 23 KR 9 - 42<br>                 <b>IdContrato:</b> 66612072<br>                 <b>Fecha:</b> 2024-12-24 00:00:00             </div>             </div>`)[0];
+                popup_6daf64efb711710420ff68608755e863.setContent(html_056bd3ec0e7b18e507bae1b12fe92092);
             
         
 
-        marker_fc60d32809e7a6c427211e369d2b1c12.bindPopup(popup_5b241932ee1825bb150b8a9455539ae1)
+        marker_133634d9f46560e315c70720195dcd93.bindPopup(popup_6daf64efb711710420ff68608755e863)
         ;
 
         
     
     
-            marker_cluster_8c8971ae9b5ab9349a6db7d7ebef0190.addTo(map_2673fe5623ea05fdd82ff7ba20075528);
+            marker_cluster_0ca5b1e7ca987df48fbace317e3f1878.addTo(map_c3389032ebc03af3df2935425c4dfda2);
         
     
-            var tile_layer_c3408119c2caf034c911ea4dcb24558d = L.tileLayer(
+            var tile_layer_7c27696da10712e6401ed25bc07914ff = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
-            var mini_map_3867f86d8c1c3ef0b19f67c13a1b761b = new L.Control.MiniMap(
-                tile_layer_c3408119c2caf034c911ea4dcb24558d,
+            var mini_map_6286e45a558d20b605bf91ba570c66b1 = new L.Control.MiniMap(
+                tile_layer_7c27696da10712e6401ed25bc07914ff,
                 {
   "position": "bottomleft",
   "width": 150,
@@ -294,10 +300,10 @@
   "minimized": false,
 }
             );
-            map_2673fe5623ea05fdd82ff7ba20075528.addControl(mini_map_3867f86d8c1c3ef0b19f67c13a1b761b);
+            map_c3389032ebc03af3df2935425c4dfda2.addControl(mini_map_6286e45a558d20b605bf91ba570c66b1);
         
     
-            var measure_control_d8831044d47720642b6245810f6b4bbe = new L.Control.Measure(
+            var measure_control_50c488119619c302ecef50a07acd5c98 = new L.Control.Measure(
                 {
   "position": "topright",
   "primaryLengthUnit": "meters",
@@ -305,7 +311,7 @@
   "primaryAreaUnit": "sqmeters",
   "secondaryAreaUnit": "acres",
 });
-            map_2673fe5623ea05fdd82ff7ba20075528.addControl(measure_control_d8831044d47720642b6245810f6b4bbe);
+            map_c3389032ebc03af3df2935425c4dfda2.addControl(measure_control_50c488119619c302ecef50a07acd5c98);
 
             // Workaround for using this plugin with Leaflet>=1.8.0
             // https://github.com/ljagis/leaflet-measure/issues/171
@@ -328,5 +334,28 @@
         </div>
         <div class="footer">Creado con ♥ por Facturación | Datos actualizados diariamente.</div>
     </div>
+     <script>
+        // Función para ocultar el loader
+        function hideLoader() {
+            const loader = document.getElementById('loader');
+            loader.classList.add('hidden');
+        }
+
+        // Evento que se dispara cuando el mapa está listo
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verificar si el mapa existe y está cargado
+            const checkMapLoaded = setInterval(function() {
+                const mapContainer = document.querySelector('.leaflet-container');
+                if (mapContainer) {
+                    clearInterval(checkMapLoaded);
+                    // Esperar un poco más para asegurar que los tiles estén cargados
+                    setTimeout(hideLoader, 1000);
+                }
+            }, 100);
+
+            // Por seguridad, ocultar el loader después de 10 segundos aunque el mapa no haya cargado
+            setTimeout(hideLoader, 10000);
+        });
+    </script>
 </body>
 </html>
