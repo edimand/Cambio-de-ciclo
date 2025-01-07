@@ -5,71 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notificador de Cambios de Contratos</title>
     <style>
-        /* Estilo general */
         body {
             margin: 0;
             padding: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: #000; /* Fondo negro */
-            color: #ffffff; /* Texto blanco */
+            background-color: #121212;
+            color: #ffffff;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-
-        /* Contenedor principal */
         .container {
             max-width: 1200px;
             width: 100%;
             padding: 20px;
             text-align: center;
         }
-
-        /* Título */
         .title {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 30px;
-            color: #ffffff; /* Título blanco */
-            text-shadow: 0px 4px 6px rgba(255, 255, 255, 0.3); /* Sombra clara */
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #f5f5f5;
         }
-
-        /* Contenedor del mapa */
         #map {
-            width: 800px; /* Ancho del mapa */
-            height: 800px; /* Altura del mapa para hacerlo cuadrado */
+            width: 100%;
+            height: 600px;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
-            margin-bottom: 50px; /* Espacio entre el mapa y el botón */
+            margin-bottom: 20px;
         }
-
-        /* Botón de descarga */
-        .download-btn {
-            background-color: #28a745;
-            color: #ffffff;
-            padding: 15px 30px;
-            font-size: 1rem;
-            font-weight: 600;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            margin-bottom: 20px; /* Espacio debajo del botón */
-        }
-
-        .download-btn:hover {
-            background-color: #218838;
-        }
-
-        /* Pie de página */
         .footer {
             margin-top: 20px;
             font-size: 0.9rem;
             color: #999999;
         }
-
         .footer a {
             color: #ffffff;
             text-decoration: none;
@@ -78,10 +48,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- Título -->
         <div class="title">Notificador de Cambios de Contratos de un Ciclo a Otro</div>
-        
-        <!-- Mapa -->
         <!DOCTYPE html>
 <html>
 <head>
@@ -109,7 +76,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_90687047d356ea2320c6405babc8ead3 {
+                #map_19590b7684cd22ddda592888393a1f87 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -126,14 +93,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_90687047d356ea2320c6405babc8ead3" ></div>
+            <div class="folium-map" id="map_19590b7684cd22ddda592888393a1f87" ></div>
         
 </body>
 <script>
     
     
-            var map_90687047d356ea2320c6405babc8ead3 = L.map(
-                "map_90687047d356ea2320c6405babc8ead3",
+            var map_19590b7684cd22ddda592888393a1f87 = L.map(
+                "map_19590b7684cd22ddda592888393a1f87",
                 {
                     center: [9.796528816223145, -74.78878021240234],
                     crs: L.CRS.EPSG3857,
@@ -150,7 +117,7 @@
 
         
     
-            var tile_layer_021f5ec3be5f9064f26cf8e7753ce641 = L.tileLayer(
+            var tile_layer_459cc55974d39ad24d5b5c1d3ae9205d = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -167,51 +134,44 @@
             );
         
     
-            tile_layer_021f5ec3be5f9064f26cf8e7753ce641.addTo(map_90687047d356ea2320c6405babc8ead3);
+            tile_layer_459cc55974d39ad24d5b5c1d3ae9205d.addTo(map_19590b7684cd22ddda592888393a1f87);
         
     
-            var marker_cluster_c34516d0ce15395e73ca479b23e421ca = L.markerClusterGroup(
+            var marker_cluster_f7b7d00a48fab1bc2d07ad691ed9cad0 = L.markerClusterGroup(
                 {
 }
             );
         
     
-            var marker_224216324059fc40d4d7edc064f1cfdd = L.marker(
+            var marker_92762eabceb8e6ee38615dedd06cae72 = L.marker(
                 [9.796528816223145, -74.78878021240234],
                 {
 }
-            ).addTo(marker_cluster_c34516d0ce15395e73ca479b23e421ca);
+            ).addTo(marker_cluster_f7b7d00a48fab1bc2d07ad691ed9cad0);
         
     
-        var popup_54c09e330c868ca0b5483905d19e1b27 = L.popup({
+        var popup_9a57e6837bb4fd3994b1baa3735e0a7e = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_e82d3df6d4955c6a31a1c71c9bf2243b = $(`<div id="html_e82d3df6d4955c6a31a1c71c9bf2243b" style="width: 100.0%; height: 100.0%;">     <b>IdCiclo:</b> 3640<br>     <b>CicloAnterior:</b> 3840<br>     <b>Dirección:</b> CL 23 KR 9 - 42<br>     <b>IdContrato:</b> 66612072<br>     <b>Fecha de cambio:</b> 2024-12-24 00:00:00     </div>`)[0];
-                popup_54c09e330c868ca0b5483905d19e1b27.setContent(html_e82d3df6d4955c6a31a1c71c9bf2243b);
+                var html_e8aa1251a9cb83a821c7f598d3c2a37e = $(`<div id="html_e8aa1251a9cb83a821c7f598d3c2a37e" style="width: 100.0%; height: 100.0%;">     <b>IdCiclo:</b> 3640<br>     <b>CicloAnterior:</b> 3840<br>     <b>Dirección:</b> CL 23 KR 9 - 42<br>     <b>IdContrato:</b> 66612072<br>     <b>Fecha de cambio:</b> 2024-12-24 00:00:00     </div>`)[0];
+                popup_9a57e6837bb4fd3994b1baa3735e0a7e.setContent(html_e8aa1251a9cb83a821c7f598d3c2a37e);
             
         
 
-        marker_224216324059fc40d4d7edc064f1cfdd.bindPopup(popup_54c09e330c868ca0b5483905d19e1b27)
+        marker_92762eabceb8e6ee38615dedd06cae72.bindPopup(popup_9a57e6837bb4fd3994b1baa3735e0a7e)
         ;
 
         
     
     
-            marker_cluster_c34516d0ce15395e73ca479b23e421ca.addTo(map_90687047d356ea2320c6405babc8ead3);
+            marker_cluster_f7b7d00a48fab1bc2d07ad691ed9cad0.addTo(map_19590b7684cd22ddda592888393a1f87);
         
 </script>
 </html>
-
-        <!-- Botón para descargar el mapa -->
-        <a href="mapa.html" download="mapa.html" class="download-btn">Descargar Mapa</a>
-
-        <!-- Pie de página -->
-        <div class="footer">
-            Creado por Edinson Manga | Datos actualizados dinámicamente.
-        </div>
+        <div class="footer">Creado por Edinson Manga | Datos actualizados dinámicamente.</div>
     </div>
 </body>
 </html>
