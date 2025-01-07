@@ -1,4 +1,54 @@
-<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificador de Cambios de Contratos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #f5f5f5;
+        }
+        #map {
+            width: 90%;
+            height: 70%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #999999;
+        }
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Notificador de Cambios de Contratos</div>
+        <div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
     
@@ -25,7 +75,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_7f0c352d740968ca7ed2bfb28fe85e3f {
+                #map_35890a958f72adf76e09924941a2eaa0 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -42,14 +92,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_7f0c352d740968ca7ed2bfb28fe85e3f&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_35890a958f72adf76e09924941a2eaa0&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_7f0c352d740968ca7ed2bfb28fe85e3f = L.map(
-                &quot;map_7f0c352d740968ca7ed2bfb28fe85e3f&quot;,
+            var map_35890a958f72adf76e09924941a2eaa0 = L.map(
+                &quot;map_35890a958f72adf76e09924941a2eaa0&quot;,
                 {
                     center: [9.796528816223145, -74.78878021240234],
                     crs: L.CRS.EPSG3857,
@@ -66,7 +116,7 @@
 
         
     
-            var tile_layer_6fa8bd7ba8a26acb58cedd1f8d4e0b3e = L.tileLayer(
+            var tile_layer_53e8ded4160265e270e63811ce32a37b = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -83,40 +133,46 @@
             );
         
     
-            tile_layer_6fa8bd7ba8a26acb58cedd1f8d4e0b3e.addTo(map_7f0c352d740968ca7ed2bfb28fe85e3f);
+            tile_layer_53e8ded4160265e270e63811ce32a37b.addTo(map_35890a958f72adf76e09924941a2eaa0);
         
     
-            var marker_cluster_42f32db60a7766da23ffb75133b568d4 = L.markerClusterGroup(
+            var marker_cluster_2e47cd3518e2689f3dbe05def0155d41 = L.markerClusterGroup(
                 {
 }
             );
         
     
-            var marker_082d0da144505b304837a26c914106d6 = L.marker(
+            var marker_47e778baffd86a29f317f861a36fbd0f = L.marker(
                 [9.796528816223145, -74.78878021240234],
                 {
 }
-            ).addTo(marker_cluster_42f32db60a7766da23ffb75133b568d4);
+            ).addTo(marker_cluster_2e47cd3518e2689f3dbe05def0155d41);
         
     
-        var popup_961166d3578cd8da86e865e30e19ddbf = L.popup({
+        var popup_6ed5286e1797c9a66ddb08332414417c = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_cfe1dbd32b4ba571e6ee30f5d94b86c8 = $(`&lt;div id=&quot;html_cfe1dbd32b4ba571e6ee30f5d94b86c8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;IdCiclo:&lt;/b&gt; 3640&lt;br&gt;     &lt;b&gt;CicloAnterior:&lt;/b&gt; 3840&lt;br&gt;     &lt;b&gt;Dirección:&lt;/b&gt; CL 23 KR 9 - 42&lt;br&gt;     &lt;b&gt;IdContrato:&lt;/b&gt; 66612072&lt;br&gt;     &lt;b&gt;Fecha de cambio:&lt;/b&gt; 2024-12-24 00:00:00     &lt;/div&gt;`)[0];
-                popup_961166d3578cd8da86e865e30e19ddbf.setContent(html_cfe1dbd32b4ba571e6ee30f5d94b86c8);
+                var html_975d1b6fbcbc832c67de70a458aa7e7b = $(`&lt;div id=&quot;html_975d1b6fbcbc832c67de70a458aa7e7b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;IdCiclo:&lt;/b&gt; 3640&lt;br&gt;     &lt;b&gt;CicloAnterior:&lt;/b&gt; 3840&lt;br&gt;     &lt;b&gt;Dirección:&lt;/b&gt; CL 23 KR 9 - 42&lt;br&gt;     &lt;b&gt;IdContrato:&lt;/b&gt; 66612072&lt;br&gt;     &lt;b&gt;Fecha de cambio:&lt;/b&gt; 2024-12-24 00:00:00     &lt;/div&gt;`)[0];
+                popup_6ed5286e1797c9a66ddb08332414417c.setContent(html_975d1b6fbcbc832c67de70a458aa7e7b);
             
         
 
-        marker_082d0da144505b304837a26c914106d6.bindPopup(popup_961166d3578cd8da86e865e30e19ddbf)
+        marker_47e778baffd86a29f317f861a36fbd0f.bindPopup(popup_6ed5286e1797c9a66ddb08332414417c)
         ;
 
         
     
     
-            marker_cluster_42f32db60a7766da23ffb75133b568d4.addTo(map_7f0c352d740968ca7ed2bfb28fe85e3f);
+            marker_cluster_2e47cd3518e2689f3dbe05def0155d41.addTo(map_35890a958f72adf76e09924941a2eaa0);
         
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
+        <div class="footer">
+            Creado por Edinson Manga | Datos de contratos actualizados dinámicamente.
+        </div>
+    </div>
+</body>
+</html>
