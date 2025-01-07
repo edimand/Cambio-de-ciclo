@@ -11,45 +11,82 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             background-color: #121212;
             color: #ffffff;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
         }
         .container {
-            max-width: 1200px;
-            width: 100%;
+            flex: 1;
             padding: 20px;
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            box-sizing: border-box;
         }
         .title {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 600;
             margin-bottom: 20px;
             color: #f5f5f5;
+            text-align: center;
         }
-        #map {
+        .map-container {
+            flex: 1;
+            position: relative;
+            min-height: calc(100vh - 150px);
             width: 100%;
-            height: 600px;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
-            margin-bottom: 20px;
+        }
+        #map {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
         .footer {
             margin-top: 20px;
             font-size: 0.9rem;
             color: #999999;
+            text-align: center;
         }
         .footer a {
             color: #ffffff;
             text-decoration: none;
+        }
+        /* Override Leaflet controls for dark theme */
+        .leaflet-control-zoom a {
+            background-color: #333 !important;
+            color: #fff !important;
+            border-color: #444 !important;
+        }
+        .leaflet-control-zoom a:hover {
+            background-color: #444 !important;
+        }
+        .leaflet-control-attribution {
+            background-color: rgba(0, 0, 0, 0.7) !important;
+            color: #fff !important;
+        }
+        .leaflet-control-attribution a {
+            color: #4CAF50 !important;
+        }
+        /* Style for popup content */
+        .leaflet-popup-content-wrapper {
+            background-color: #333 !important;
+            color: #fff !important;
+        }
+        .leaflet-popup-tip {
+            background-color: #333 !important;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="title">Notificador de Cambios de Contratos de un Ciclo a Otro</div>
-        <!DOCTYPE html>
+        <div class="map-container">
+            <!DOCTYPE html>
 <html>
 <head>
     
@@ -76,7 +113,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_19590b7684cd22ddda592888393a1f87 {
+                #map_4900ed2da746bbc47e7ee6f888eda543 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -93,14 +130,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_19590b7684cd22ddda592888393a1f87" ></div>
+            <div class="folium-map" id="map_4900ed2da746bbc47e7ee6f888eda543" ></div>
         
 </body>
 <script>
     
     
-            var map_19590b7684cd22ddda592888393a1f87 = L.map(
-                "map_19590b7684cd22ddda592888393a1f87",
+            var map_4900ed2da746bbc47e7ee6f888eda543 = L.map(
+                "map_4900ed2da746bbc47e7ee6f888eda543",
                 {
                     center: [9.796528816223145, -74.78878021240234],
                     crs: L.CRS.EPSG3857,
@@ -117,7 +154,7 @@
 
         
     
-            var tile_layer_459cc55974d39ad24d5b5c1d3ae9205d = L.tileLayer(
+            var tile_layer_d8708cf0a941dfce3aa697726bcf2096 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -134,44 +171,45 @@
             );
         
     
-            tile_layer_459cc55974d39ad24d5b5c1d3ae9205d.addTo(map_19590b7684cd22ddda592888393a1f87);
+            tile_layer_d8708cf0a941dfce3aa697726bcf2096.addTo(map_4900ed2da746bbc47e7ee6f888eda543);
         
     
-            var marker_cluster_f7b7d00a48fab1bc2d07ad691ed9cad0 = L.markerClusterGroup(
+            var marker_cluster_ab15721a38a7980f7078ce0399ffa92f = L.markerClusterGroup(
                 {
 }
             );
         
     
-            var marker_92762eabceb8e6ee38615dedd06cae72 = L.marker(
+            var marker_eeff80c721a0ee7cafe0d0dd3bcac2c8 = L.marker(
                 [9.796528816223145, -74.78878021240234],
                 {
 }
-            ).addTo(marker_cluster_f7b7d00a48fab1bc2d07ad691ed9cad0);
+            ).addTo(marker_cluster_ab15721a38a7980f7078ce0399ffa92f);
         
     
-        var popup_9a57e6837bb4fd3994b1baa3735e0a7e = L.popup({
+        var popup_69064ec5ba468bc9c3cc27967d303c89 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_e8aa1251a9cb83a821c7f598d3c2a37e = $(`<div id="html_e8aa1251a9cb83a821c7f598d3c2a37e" style="width: 100.0%; height: 100.0%;">     <b>IdCiclo:</b> 3640<br>     <b>CicloAnterior:</b> 3840<br>     <b>Dirección:</b> CL 23 KR 9 - 42<br>     <b>IdContrato:</b> 66612072<br>     <b>Fecha de cambio:</b> 2024-12-24 00:00:00     </div>`)[0];
-                popup_9a57e6837bb4fd3994b1baa3735e0a7e.setContent(html_e8aa1251a9cb83a821c7f598d3c2a37e);
+                var html_215151b07526bba6c6534f599f3301a7 = $(`<div id="html_215151b07526bba6c6534f599f3301a7" style="width: 100.0%; height: 100.0%;">     <b>IdCiclo:</b> 3640<br>     <b>CicloAnterior:</b> 3840<br>     <b>Dirección:</b> CL 23 KR 9 - 42<br>     <b>IdContrato:</b> 66612072<br>     <b>Fecha de cambio:</b> 2024-12-24 00:00:00     </div>`)[0];
+                popup_69064ec5ba468bc9c3cc27967d303c89.setContent(html_215151b07526bba6c6534f599f3301a7);
             
         
 
-        marker_92762eabceb8e6ee38615dedd06cae72.bindPopup(popup_9a57e6837bb4fd3994b1baa3735e0a7e)
+        marker_eeff80c721a0ee7cafe0d0dd3bcac2c8.bindPopup(popup_69064ec5ba468bc9c3cc27967d303c89)
         ;
 
         
     
     
-            marker_cluster_f7b7d00a48fab1bc2d07ad691ed9cad0.addTo(map_19590b7684cd22ddda592888393a1f87);
+            marker_cluster_ab15721a38a7980f7078ce0399ffa92f.addTo(map_4900ed2da746bbc47e7ee6f888eda543);
         
 </script>
 </html>
-        <div class="footer">Creado por Edinson Manga | Datos actualizados dinámicamente.</div>
+        </div>
+        <div class="footer">Creado por Facturación | Datos actualizados dinámicamente.</div>
     </div>
 </body>
 </html>
