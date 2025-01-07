@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notificador de Cambios de Contratos</title>
     <style>
+        /* Estilo general */
         body {
             margin: 0;
             padding: 0;
@@ -15,46 +16,59 @@
             flex-direction: column;
             align-items: center;
         }
+
+        /* Contenedor principal */
         .container {
             max-width: 1200px;
             width: 100%;
             padding: 20px;
             text-align: center;
         }
+
+        /* Título moderno */
         .title {
-            font-size: 2.5rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: #f5f5f5;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #1e90ff;
+            text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
         }
+
+        /* Contenedor del mapa */
         #map {
             width: 100%;
             height: 600px;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
+
+        /* Botón de descarga */
         .download-btn {
-            background-color: #1e90ff;
+            background-color: #28a745;
             color: #ffffff;
-            padding: 10px 20px;
+            padding: 15px 30px;
             font-size: 1rem;
-            font-weight: 500;
+            font-weight: 600;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
             transition: background-color 0.3s ease;
         }
+
         .download-btn:hover {
-            background-color: #0b74cc;
+            background-color: #218838;
         }
+
+        /* Pie de página */
         .footer {
             margin-top: 20px;
             font-size: 0.9rem;
             color: #999999;
         }
+
         .footer a {
             color: #ffffff;
             text-decoration: none;
@@ -63,35 +77,38 @@
 </head>
 <body>
     <div class="container">
+        <!-- Título -->
         <div class="title">Notificador de Cambios de Contratos de un Ciclo a Otro</div>
-        <div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
+        
+        <!-- Mapa -->
+        <!DOCTYPE html>
+<html>
+<head>
     
-    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     
-        &lt;script&gt;
+        <script>
             L_NO_TOUCH = false;
             L_DISABLE_3D = false;
-        &lt;/script&gt;
+        </script>
     
-    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
-    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
     
-            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
-            &lt;style&gt;
-                #map_1d4d0dc2f6e03b33a951b1ca3d1296eb {
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fd3de0e146911bdceaa154af69b231ad {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -99,30 +116,30 @@
                     top: 0.0%;
                 }
                 .leaflet-container { font-size: 1rem; }
-            &lt;/style&gt;
+            </style>
         
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css&quot;/&gt;
-&lt;/head&gt;
-&lt;body&gt;
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_1d4d0dc2f6e03b33a951b1ca3d1296eb&quot; &gt;&lt;/div&gt;
+            <div class="folium-map" id="map_fd3de0e146911bdceaa154af69b231ad" ></div>
         
-&lt;/body&gt;
-&lt;script&gt;
+</body>
+<script>
     
     
-            var map_1d4d0dc2f6e03b33a951b1ca3d1296eb = L.map(
-                &quot;map_1d4d0dc2f6e03b33a951b1ca3d1296eb&quot;,
+            var map_fd3de0e146911bdceaa154af69b231ad = L.map(
+                "map_fd3de0e146911bdceaa154af69b231ad",
                 {
                     center: [9.796528816223145, -74.78878021240234],
                     crs: L.CRS.EPSG3857,
                     ...{
-  &quot;zoom&quot;: 12,
-  &quot;zoomControl&quot;: true,
-  &quot;preferCanvas&quot;: false,
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
 }
 
                 }
@@ -132,62 +149,68 @@
 
         
     
-            var tile_layer_d59b4c025817696cc4304591ed2d8f11 = L.tileLayer(
-                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+            var tile_layer_7aa4012243eab7b48bc5b90524e0e84b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
-  &quot;minZoom&quot;: 0,
-  &quot;maxZoom&quot;: 19,
-  &quot;maxNativeZoom&quot;: 19,
-  &quot;noWrap&quot;: false,
-  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
-  &quot;subdomains&quot;: &quot;abc&quot;,
-  &quot;detectRetina&quot;: false,
-  &quot;tms&quot;: false,
-  &quot;opacity&quot;: 1,
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
 }
 
             );
         
     
-            tile_layer_d59b4c025817696cc4304591ed2d8f11.addTo(map_1d4d0dc2f6e03b33a951b1ca3d1296eb);
+            tile_layer_7aa4012243eab7b48bc5b90524e0e84b.addTo(map_fd3de0e146911bdceaa154af69b231ad);
         
     
-            var marker_cluster_6470d3cc234b5f756f2de642e8730455 = L.markerClusterGroup(
+            var marker_cluster_d0f5c829f580b0b6c090aadc25ddc6f0 = L.markerClusterGroup(
                 {
 }
             );
         
     
-            var marker_e2b989763cbb915936592b90807ef63b = L.marker(
+            var marker_73d2a331364ac727b39a26dc548fc21a = L.marker(
                 [9.796528816223145, -74.78878021240234],
                 {
 }
-            ).addTo(marker_cluster_6470d3cc234b5f756f2de642e8730455);
+            ).addTo(marker_cluster_d0f5c829f580b0b6c090aadc25ddc6f0);
         
     
-        var popup_b38fb2a0155996dcd1641fe1d52f78cf = L.popup({
-  &quot;maxWidth&quot;: 300,
+        var popup_6686f4f9a636f614972f70e4ceffc361 = L.popup({
+  "maxWidth": 300,
 });
 
         
             
-                var html_a5ed47403ead9cf6a4d37a1ae460e6e2 = $(`&lt;div id=&quot;html_a5ed47403ead9cf6a4d37a1ae460e6e2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;IdCiclo:&lt;/b&gt; 3640&lt;br&gt;     &lt;b&gt;CicloAnterior:&lt;/b&gt; 3840&lt;br&gt;     &lt;b&gt;Dirección:&lt;/b&gt; CL 23 KR 9 - 42&lt;br&gt;     &lt;b&gt;IdContrato:&lt;/b&gt; 66612072&lt;br&gt;     &lt;b&gt;Fecha de cambio:&lt;/b&gt; 2024-12-24 00:00:00     &lt;/div&gt;`)[0];
-                popup_b38fb2a0155996dcd1641fe1d52f78cf.setContent(html_a5ed47403ead9cf6a4d37a1ae460e6e2);
+                var html_bafd2446d686b425dfdbc2b713e6ceec = $(`<div id="html_bafd2446d686b425dfdbc2b713e6ceec" style="width: 100.0%; height: 100.0%;">     <b>IdCiclo:</b> 3640<br>     <b>CicloAnterior:</b> 3840<br>     <b>Dirección:</b> CL 23 KR 9 - 42<br>     <b>IdContrato:</b> 66612072<br>     <b>Fecha de cambio:</b> 2024-12-24 00:00:00     </div>`)[0];
+                popup_6686f4f9a636f614972f70e4ceffc361.setContent(html_bafd2446d686b425dfdbc2b713e6ceec);
             
         
 
-        marker_e2b989763cbb915936592b90807ef63b.bindPopup(popup_b38fb2a0155996dcd1641fe1d52f78cf)
+        marker_73d2a331364ac727b39a26dc548fc21a.bindPopup(popup_6686f4f9a636f614972f70e4ceffc361)
         ;
 
         
     
     
-            marker_cluster_6470d3cc234b5f756f2de642e8730455.addTo(map_1d4d0dc2f6e03b33a951b1ca3d1296eb);
+            marker_cluster_d0f5c829f580b0b6c090aadc25ddc6f0.addTo(map_fd3de0e146911bdceaa154af69b231ad);
         
-&lt;/script&gt;
-&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
-        <a href="mapa.html" download class="download-btn">Descargar Mapa</a>
-        <div class="footer">Creado con ♥ por Facturacion | Datos actualizados diariamente.</div>
+</script>
+</html>
+
+        <!-- Botón para descargar el mapa -->
+        <a href="mapa.html" download="mapa.html" class="download-btn">Descargar Mapa</a>
+
+        <!-- Pie de página -->
+        <div class="footer">
+            Creado por Edinson Manga | Datos actualizados dinámicamente.
+        </div>
     </div>
 </body>
 </html>
