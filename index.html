@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,13 +11,14 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             background-color: #121212;
             color: #ffffff;
-        }
-        .container {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
             text-align: center;
         }
         .title {
@@ -28,11 +28,27 @@
             color: #f5f5f5;
         }
         #map {
-            width: 90%;
-            height: 70%;
+            width: 100%;
+            height: 600px;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+            margin-bottom: 20px;
+        }
+        .download-btn {
+            background-color: #1e90ff;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: 500;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .download-btn:hover {
+            background-color: #0b74cc;
         }
         .footer {
             margin-top: 20px;
@@ -47,7 +63,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="title">Notificador de Cambios de Contratos</div>
+        <div class="title">Notificador de Cambios de Contratos de un Ciclo a Otro</div>
         <div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -75,7 +91,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_35890a958f72adf76e09924941a2eaa0 {
+                #map_e751b96ef9da2482b432e8c6afef55e9 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -92,14 +108,14 @@
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_35890a958f72adf76e09924941a2eaa0&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_e751b96ef9da2482b432e8c6afef55e9&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_35890a958f72adf76e09924941a2eaa0 = L.map(
-                &quot;map_35890a958f72adf76e09924941a2eaa0&quot;,
+            var map_e751b96ef9da2482b432e8c6afef55e9 = L.map(
+                &quot;map_e751b96ef9da2482b432e8c6afef55e9&quot;,
                 {
                     center: [9.796528816223145, -74.78878021240234],
                     crs: L.CRS.EPSG3857,
@@ -116,7 +132,7 @@
 
         
     
-            var tile_layer_53e8ded4160265e270e63811ce32a37b = L.tileLayer(
+            var tile_layer_15eb03527feac8b4290050fa4593d17b = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -133,46 +149,45 @@
             );
         
     
-            tile_layer_53e8ded4160265e270e63811ce32a37b.addTo(map_35890a958f72adf76e09924941a2eaa0);
+            tile_layer_15eb03527feac8b4290050fa4593d17b.addTo(map_e751b96ef9da2482b432e8c6afef55e9);
         
     
-            var marker_cluster_2e47cd3518e2689f3dbe05def0155d41 = L.markerClusterGroup(
+            var marker_cluster_6fd0b0be9661ed4de695190f86d43383 = L.markerClusterGroup(
                 {
 }
             );
         
     
-            var marker_47e778baffd86a29f317f861a36fbd0f = L.marker(
+            var marker_6dbf0df97a5e831276ecf2b5e98f4acc = L.marker(
                 [9.796528816223145, -74.78878021240234],
                 {
 }
-            ).addTo(marker_cluster_2e47cd3518e2689f3dbe05def0155d41);
+            ).addTo(marker_cluster_6fd0b0be9661ed4de695190f86d43383);
         
     
-        var popup_6ed5286e1797c9a66ddb08332414417c = L.popup({
+        var popup_b3223df8e5e98fbeeb715b9779cccca7 = L.popup({
   &quot;maxWidth&quot;: 300,
 });
 
         
             
-                var html_975d1b6fbcbc832c67de70a458aa7e7b = $(`&lt;div id=&quot;html_975d1b6fbcbc832c67de70a458aa7e7b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;IdCiclo:&lt;/b&gt; 3640&lt;br&gt;     &lt;b&gt;CicloAnterior:&lt;/b&gt; 3840&lt;br&gt;     &lt;b&gt;Dirección:&lt;/b&gt; CL 23 KR 9 - 42&lt;br&gt;     &lt;b&gt;IdContrato:&lt;/b&gt; 66612072&lt;br&gt;     &lt;b&gt;Fecha de cambio:&lt;/b&gt; 2024-12-24 00:00:00     &lt;/div&gt;`)[0];
-                popup_6ed5286e1797c9a66ddb08332414417c.setContent(html_975d1b6fbcbc832c67de70a458aa7e7b);
+                var html_90eba75643e32294df18516c06a51b84 = $(`&lt;div id=&quot;html_90eba75643e32294df18516c06a51b84&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;IdCiclo:&lt;/b&gt; 3640&lt;br&gt;     &lt;b&gt;CicloAnterior:&lt;/b&gt; 3840&lt;br&gt;     &lt;b&gt;Dirección:&lt;/b&gt; CL 23 KR 9 - 42&lt;br&gt;     &lt;b&gt;IdContrato:&lt;/b&gt; 66612072&lt;br&gt;     &lt;b&gt;Fecha de cambio:&lt;/b&gt; 2024-12-24 00:00:00     &lt;/div&gt;`)[0];
+                popup_b3223df8e5e98fbeeb715b9779cccca7.setContent(html_90eba75643e32294df18516c06a51b84);
             
         
 
-        marker_47e778baffd86a29f317f861a36fbd0f.bindPopup(popup_6ed5286e1797c9a66ddb08332414417c)
+        marker_6dbf0df97a5e831276ecf2b5e98f4acc.bindPopup(popup_b3223df8e5e98fbeeb715b9779cccca7)
         ;
 
         
     
     
-            marker_cluster_2e47cd3518e2689f3dbe05def0155d41.addTo(map_35890a958f72adf76e09924941a2eaa0);
+            marker_cluster_6fd0b0be9661ed4de695190f86d43383.addTo(map_e751b96ef9da2482b432e8c6afef55e9);
         
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
-        <div class="footer">
-            Creado por Edinson Manga | Datos de contratos actualizados dinámicamente.
-        </div>
+        <a href="mapa.html" download class="download-btn">Descargar Mapa</a>
+        <div class="footer">Creado por Edinson Manga | Datos actualizados dinámicamente.</div>
     </div>
 </body>
 </html>
