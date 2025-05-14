@@ -167,7 +167,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_ed81bf3d97b2e607b6d26bcb4be4f06a {
+                #map_e81cb33ad1ac3db7353b473f49816a4f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -188,16 +188,16 @@
 <body>
     
     
-            <div class="folium-map" id="map_ed81bf3d97b2e607b6d26bcb4be4f06a" ></div>
+            <div class="folium-map" id="map_e81cb33ad1ac3db7353b473f49816a4f" ></div>
         
 </body>
 <script>
     
     
-            var map_ed81bf3d97b2e607b6d26bcb4be4f06a = L.map(
-                "map_ed81bf3d97b2e607b6d26bcb4be4f06a",
+            var map_e81cb33ad1ac3db7353b473f49816a4f = L.map(
+                "map_e81cb33ad1ac3db7353b473f49816a4f",
                 {
-                    center: [10.938399314880371, -74.82353210449219],
+                    center: [10.97558307647705, -74.85989379882812],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 6,
@@ -212,7 +212,7 @@
 
         
     
-            var tile_layer_b816cef949712c584cfee5cb943a8476 = L.tileLayer(
+            var tile_layer_c0d76aaadc9b6fd3f537c789e92e9706 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -229,10 +229,10 @@
             );
         
     
-            tile_layer_b816cef949712c584cfee5cb943a8476.addTo(map_ed81bf3d97b2e607b6d26bcb4be4f06a);
+            tile_layer_c0d76aaadc9b6fd3f537c789e92e9706.addTo(map_e81cb33ad1ac3db7353b473f49816a4f);
         
     
-            var marker_cluster_3740bffdabbfd81012383d10c60556ea = L.markerClusterGroup(
+            var marker_cluster_74089f6edaf125b9bb75b0be80f911ca = L.markerClusterGroup(
                 {
   "maxClusterRadius": 50,
   "disableClusteringAtZoom": 15,
@@ -241,14 +241,14 @@
             );
         
     
-            var marker_0825dc01dfcf1046ad1d1229b32b71fb = L.marker(
+            var marker_7f86ee7dca8b59245b99363a488c4560 = L.marker(
                 [10.97558307647705, -74.85989379882812],
                 {
 }
-            ).addTo(marker_cluster_3740bffdabbfd81012383d10c60556ea);
+            ).addTo(marker_cluster_74089f6edaf125b9bb75b0be80f911ca);
         
     
-            var icon_ace5f303ab0fbc7fd957cd8591ba2218 = L.AwesomeMarkers.icon(
+            var icon_045c8069b77400ac9ace5db00ba5666a = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -259,73 +259,35 @@
             );
         
     
-        var popup_d8ff4f23bad3227aeda0bdf7f5d8a888 = L.popup({
+        var popup_574524227d91e9d901a6cbad7accda57 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_bbbf0a245aa2baa4b98d5d1e20b8fb3c = $(`<div id="html_bbbf0a245aa2baa4b98d5d1e20b8fb3c" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif;">                 <b>IdCiclo:</b> 1850<br>                 <b>CicloAnterior:</b> 2401<br>                 <b>Dirección:</b> CRT A JUAN MINA KM 3 - 0<br>                 <b>IdContrato:</b> 66315671<br>                 <b>Fecha:</b> 2025-04-15 00:00:00             </div>             </div>`)[0];
-                popup_d8ff4f23bad3227aeda0bdf7f5d8a888.setContent(html_bbbf0a245aa2baa4b98d5d1e20b8fb3c);
+                var html_481b8f1926d1e06cb86052e4c20ea3df = $(`<div id="html_481b8f1926d1e06cb86052e4c20ea3df" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif;">                 <b>IdCiclo:</b> 1850<br>                 <b>CicloAnterior:</b> 2401<br>                 <b>Dirección:</b> CRT A JUAN MINA KM 3 - 0<br>                 <b>IdContrato:</b> 66315671<br>                 <b>Fecha:</b> 2025-04-15 00:00:00             </div>             </div>`)[0];
+                popup_574524227d91e9d901a6cbad7accda57.setContent(html_481b8f1926d1e06cb86052e4c20ea3df);
             
         
 
-        marker_0825dc01dfcf1046ad1d1229b32b71fb.bindPopup(popup_d8ff4f23bad3227aeda0bdf7f5d8a888)
+        marker_7f86ee7dca8b59245b99363a488c4560.bindPopup(popup_574524227d91e9d901a6cbad7accda57)
         ;
 
         
     
     
-                marker_0825dc01dfcf1046ad1d1229b32b71fb.setIcon(icon_ace5f303ab0fbc7fd957cd8591ba2218);
+                marker_7f86ee7dca8b59245b99363a488c4560.setIcon(icon_045c8069b77400ac9ace5db00ba5666a);
             
     
-            var marker_6d3d3f3e1fd0f973d428b103f4f055ab = L.marker(
-                [10.901215553283691, -74.78717803955078],
-                {
-}
-            ).addTo(marker_cluster_3740bffdabbfd81012383d10c60556ea);
+            marker_cluster_74089f6edaf125b9bb75b0be80f911ca.addTo(map_e81cb33ad1ac3db7353b473f49816a4f);
         
     
-            var icon_06ff7f22dc4c364f49407c77dcdbe818 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "home",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_f7cd10cfb62246c933f3ff8d61647596 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_d1d40a257b1ad43f29d0eaef197502cd = $(`<div id="html_d1d40a257b1ad43f29d0eaef197502cd" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif;">                 <b>IdCiclo:</b> 4716<br>                 <b>CicloAnterior:</b> 1406<br>                 <b>Dirección:</b> CL 21 KR 9 - 23<br>                 <b>IdContrato:</b> 67677177<br>                 <b>Fecha:</b> 2025-04-14 00:00:00             </div>             </div>`)[0];
-                popup_f7cd10cfb62246c933f3ff8d61647596.setContent(html_d1d40a257b1ad43f29d0eaef197502cd);
-            
-        
-
-        marker_6d3d3f3e1fd0f973d428b103f4f055ab.bindPopup(popup_f7cd10cfb62246c933f3ff8d61647596)
-        ;
-
-        
-    
-    
-                marker_6d3d3f3e1fd0f973d428b103f4f055ab.setIcon(icon_06ff7f22dc4c364f49407c77dcdbe818);
-            
-    
-            marker_cluster_3740bffdabbfd81012383d10c60556ea.addTo(map_ed81bf3d97b2e607b6d26bcb4be4f06a);
-        
-    
-            var tile_layer_d75d1e3560c9252d35ce981ede27dd20 = L.tileLayer(
+            var tile_layer_f1333dc41e2db884507d17e462f547e3 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
-            var mini_map_789f4312aab0e30a48db15249aca167c = new L.Control.MiniMap(
-                tile_layer_d75d1e3560c9252d35ce981ede27dd20,
+            var mini_map_57295240c0df07a0467d70d94660eee6 = new L.Control.MiniMap(
+                tile_layer_f1333dc41e2db884507d17e462f547e3,
                 {
   "position": "bottomleft",
   "width": 150,
@@ -340,10 +302,10 @@
   "minimized": false,
 }
             );
-            map_ed81bf3d97b2e607b6d26bcb4be4f06a.addControl(mini_map_789f4312aab0e30a48db15249aca167c);
+            map_e81cb33ad1ac3db7353b473f49816a4f.addControl(mini_map_57295240c0df07a0467d70d94660eee6);
         
     
-            var measure_control_183f20ee245416a86c4e059b0853e690 = new L.Control.Measure(
+            var measure_control_717085706953ca6ce4459e1595f7c799 = new L.Control.Measure(
                 {
   "position": "topright",
   "primaryLengthUnit": "meters",
@@ -351,7 +313,7 @@
   "primaryAreaUnit": "sqmeters",
   "secondaryAreaUnit": "acres",
 });
-            map_ed81bf3d97b2e607b6d26bcb4be4f06a.addControl(measure_control_183f20ee245416a86c4e059b0853e690);
+            map_e81cb33ad1ac3db7353b473f49816a4f.addControl(measure_control_717085706953ca6ce4459e1595f7c799);
 
             // Workaround for using this plugin with Leaflet>=1.8.0
             // https://github.com/ljagis/leaflet-measure/issues/171
