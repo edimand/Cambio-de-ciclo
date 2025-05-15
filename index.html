@@ -167,7 +167,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_e81cb33ad1ac3db7353b473f49816a4f {
+                #map_91da85bfb2c36bd45df4bdacd34c263c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -188,16 +188,16 @@
 <body>
     
     
-            <div class="folium-map" id="map_e81cb33ad1ac3db7353b473f49816a4f" ></div>
+            <div class="folium-map" id="map_91da85bfb2c36bd45df4bdacd34c263c" ></div>
         
 </body>
 <script>
     
     
-            var map_e81cb33ad1ac3db7353b473f49816a4f = L.map(
-                "map_e81cb33ad1ac3db7353b473f49816a4f",
+            var map_91da85bfb2c36bd45df4bdacd34c263c = L.map(
+                "map_91da85bfb2c36bd45df4bdacd34c263c",
                 {
-                    center: [10.97558307647705, -74.85989379882812],
+                    center: [10.459558486938477, -74.49989318847656],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 6,
@@ -212,7 +212,7 @@
 
         
     
-            var tile_layer_c0d76aaadc9b6fd3f537c789e92e9706 = L.tileLayer(
+            var tile_layer_e110a34e7245190b399eaa83ad5ae3d5 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -229,10 +229,10 @@
             );
         
     
-            tile_layer_c0d76aaadc9b6fd3f537c789e92e9706.addTo(map_e81cb33ad1ac3db7353b473f49816a4f);
+            tile_layer_e110a34e7245190b399eaa83ad5ae3d5.addTo(map_91da85bfb2c36bd45df4bdacd34c263c);
         
     
-            var marker_cluster_74089f6edaf125b9bb75b0be80f911ca = L.markerClusterGroup(
+            var marker_cluster_4b9f2dcc775897aa27655b366c9ccc83 = L.markerClusterGroup(
                 {
   "maxClusterRadius": 50,
   "disableClusteringAtZoom": 15,
@@ -241,14 +241,52 @@
             );
         
     
-            var marker_7f86ee7dca8b59245b99363a488c4560 = L.marker(
-                [10.97558307647705, -74.85989379882812],
+            var marker_5158b91723d889a6688eb251e60e5b83 = L.marker(
+                [9.791529655456543, -74.77967071533203],
                 {
 }
-            ).addTo(marker_cluster_74089f6edaf125b9bb75b0be80f911ca);
+            ).addTo(marker_cluster_4b9f2dcc775897aa27655b366c9ccc83);
         
     
-            var icon_045c8069b77400ac9ace5db00ba5666a = L.AwesomeMarkers.icon(
+            var icon_bf4a763d2070810f1720d709f969a86a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_515522a189b7cc21e9ebc7ef2a958b14 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9bf27ebef74c0b140b502336f7a3237c = $(`<div id="html_9bf27ebef74c0b140b502336f7a3237c" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif;">                 <b>IdCiclo:</b> 3840<br>                 <b>CicloAnterior:</b> 3640<br>                 <b>Dirección:</b> CL 19 KR 12A - 21<br>                 <b>IdContrato:</b> 67675591<br>                 <b>Fecha:</b> 2025-05-14 00:00:00             </div>             </div>`)[0];
+                popup_515522a189b7cc21e9ebc7ef2a958b14.setContent(html_9bf27ebef74c0b140b502336f7a3237c);
+            
+        
+
+        marker_5158b91723d889a6688eb251e60e5b83.bindPopup(popup_515522a189b7cc21e9ebc7ef2a958b14)
+        ;
+
+        
+    
+    
+                marker_5158b91723d889a6688eb251e60e5b83.setIcon(icon_bf4a763d2070810f1720d709f969a86a);
+            
+    
+            var marker_1fff9050634607296c68617a2a05e0f9 = L.marker(
+                [11.127588272094727, -74.22012329101562],
+                {
+}
+            ).addTo(marker_cluster_4b9f2dcc775897aa27655b366c9ccc83);
+        
+    
+            var icon_3f3b18bd8fee383218687ddb8f9ece9a = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -259,35 +297,35 @@
             );
         
     
-        var popup_574524227d91e9d901a6cbad7accda57 = L.popup({
+        var popup_a51b2d1f6fcf4377169c4fbbea84595b = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_481b8f1926d1e06cb86052e4c20ea3df = $(`<div id="html_481b8f1926d1e06cb86052e4c20ea3df" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif;">                 <b>IdCiclo:</b> 1850<br>                 <b>CicloAnterior:</b> 2401<br>                 <b>Dirección:</b> CRT A JUAN MINA KM 3 - 0<br>                 <b>IdContrato:</b> 66315671<br>                 <b>Fecha:</b> 2025-04-15 00:00:00             </div>             </div>`)[0];
-                popup_574524227d91e9d901a6cbad7accda57.setContent(html_481b8f1926d1e06cb86052e4c20ea3df);
+                var html_eb5f6ef82c942c5801ff01bd2c70e348 = $(`<div id="html_eb5f6ef82c942c5801ff01bd2c70e348" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif;">                 <b>IdCiclo:</b> 5002<br>                 <b>CicloAnterior:</b> 4304<br>                 <b>Dirección:</b> KR 21B CL 41A - 124 APTO 201<br>                 <b>IdContrato:</b> 67701517<br>                 <b>Fecha:</b> 2025-05-14 00:00:00             </div>             </div>`)[0];
+                popup_a51b2d1f6fcf4377169c4fbbea84595b.setContent(html_eb5f6ef82c942c5801ff01bd2c70e348);
             
         
 
-        marker_7f86ee7dca8b59245b99363a488c4560.bindPopup(popup_574524227d91e9d901a6cbad7accda57)
+        marker_1fff9050634607296c68617a2a05e0f9.bindPopup(popup_a51b2d1f6fcf4377169c4fbbea84595b)
         ;
 
         
     
     
-                marker_7f86ee7dca8b59245b99363a488c4560.setIcon(icon_045c8069b77400ac9ace5db00ba5666a);
+                marker_1fff9050634607296c68617a2a05e0f9.setIcon(icon_3f3b18bd8fee383218687ddb8f9ece9a);
             
     
-            marker_cluster_74089f6edaf125b9bb75b0be80f911ca.addTo(map_e81cb33ad1ac3db7353b473f49816a4f);
+            marker_cluster_4b9f2dcc775897aa27655b366c9ccc83.addTo(map_91da85bfb2c36bd45df4bdacd34c263c);
         
     
-            var tile_layer_f1333dc41e2db884507d17e462f547e3 = L.tileLayer(
+            var tile_layer_28e03e7c7231cd44c919649ec8216eac = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
-            var mini_map_57295240c0df07a0467d70d94660eee6 = new L.Control.MiniMap(
-                tile_layer_f1333dc41e2db884507d17e462f547e3,
+            var mini_map_db81b651b93017996bb4f98704ceb265 = new L.Control.MiniMap(
+                tile_layer_28e03e7c7231cd44c919649ec8216eac,
                 {
   "position": "bottomleft",
   "width": 150,
@@ -302,10 +340,10 @@
   "minimized": false,
 }
             );
-            map_e81cb33ad1ac3db7353b473f49816a4f.addControl(mini_map_57295240c0df07a0467d70d94660eee6);
+            map_91da85bfb2c36bd45df4bdacd34c263c.addControl(mini_map_db81b651b93017996bb4f98704ceb265);
         
     
-            var measure_control_717085706953ca6ce4459e1595f7c799 = new L.Control.Measure(
+            var measure_control_6c819609f06ad9bf42e998ccea9987c7 = new L.Control.Measure(
                 {
   "position": "topright",
   "primaryLengthUnit": "meters",
@@ -313,7 +351,7 @@
   "primaryAreaUnit": "sqmeters",
   "secondaryAreaUnit": "acres",
 });
-            map_e81cb33ad1ac3db7353b473f49816a4f.addControl(measure_control_717085706953ca6ce4459e1595f7c799);
+            map_91da85bfb2c36bd45df4bdacd34c263c.addControl(measure_control_6c819609f06ad9bf42e998ccea9987c7);
 
             // Workaround for using this plugin with Leaflet>=1.8.0
             // https://github.com/ljagis/leaflet-measure/issues/171
