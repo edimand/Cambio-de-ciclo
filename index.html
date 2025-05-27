@@ -159,7 +159,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_c58ec5121f53bc49f835287bafa6651c {
+                #map_5f6fcaf5a882241a3432d7fca412533e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -203,16 +203,16 @@
 <body>
     
     
-            <div class="folium-map" id="map_c58ec5121f53bc49f835287bafa6651c" ></div>
+            <div class="folium-map" id="map_5f6fcaf5a882241a3432d7fca412533e" ></div>
         
 </body>
 <script>
     
     
-            var map_c58ec5121f53bc49f835287bafa6651c = L.map(
-                "map_c58ec5121f53bc49f835287bafa6651c",
+            var map_5f6fcaf5a882241a3432d7fca412533e = L.map(
+                "map_5f6fcaf5a882241a3432d7fca412533e",
                 {
-                    center: [10.329497337341309, -74.51289367675781],
+                    center: [10.431021690368652, -74.44271087646484],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 6,
@@ -227,7 +227,7 @@
 
         
     
-            var tile_layer_4ff8ed0fc3f64ea4cba2d80e903e7d17 = L.tileLayer(
+            var tile_layer_f436e9e5c3d78b2202352f849f77bbc1 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -244,10 +244,10 @@
             );
         
     
-            tile_layer_4ff8ed0fc3f64ea4cba2d80e903e7d17.addTo(map_c58ec5121f53bc49f835287bafa6651c);
+            tile_layer_f436e9e5c3d78b2202352f849f77bbc1.addTo(map_5f6fcaf5a882241a3432d7fca412533e);
         
     
-            var marker_cluster_18a0e76519d981e488fe4655259b7eda = L.markerClusterGroup(
+            var marker_cluster_931d5473b2d2d37a775f016a74b76c68 = L.markerClusterGroup(
                 {
   "maxClusterRadius": 50,
   "disableClusteringAtZoom": 15,
@@ -256,90 +256,14 @@
             );
         
     
-            var marker_57dc6122d14ae82d0e0d13c6ac208206 = L.marker(
-                [9.791529655456543, -74.77967071533203],
+            var marker_3b58ae3ed2919ed2778bd894ef95648b = L.marker(
+                [10.83712100982666, -74.16199493408203],
                 {
 }
-            ).addTo(marker_cluster_18a0e76519d981e488fe4655259b7eda);
+            ).addTo(marker_cluster_931d5473b2d2d37a775f016a74b76c68);
         
     
-            var icon_f05dca93c89fb926c28068182b11cad1 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "home",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_5866f67624253f2b8eecf79497d64633 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_dc039e2d135daf5c6750728880d23e3e = $(`<div id="html_dc039e2d135daf5c6750728880d23e3e" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif;">                 <b>IdCiclo:</b> 3640<br>                 <b>CicloAnterior:</b> 3840<br>                 <b>Dirección:</b> CL 19 KR 12A - 21<br>                 <b>IdContrato:</b> 67675591<br>                 <b>Fecha:</b> 2025-05-22 00:00:00             </div>             </div>`)[0];
-                popup_5866f67624253f2b8eecf79497d64633.setContent(html_dc039e2d135daf5c6750728880d23e3e);
-            
-        
-
-        marker_57dc6122d14ae82d0e0d13c6ac208206.bindPopup(popup_5866f67624253f2b8eecf79497d64633)
-        ;
-
-        
-    
-    
-                marker_57dc6122d14ae82d0e0d13c6ac208206.setIcon(icon_f05dca93c89fb926c28068182b11cad1);
-            
-    
-            var marker_9dc66e600fad4daf252d2997db7fba25 = L.marker(
-                [9.791529655456543, -74.77967071533203],
-                {
-}
-            ).addTo(marker_cluster_18a0e76519d981e488fe4655259b7eda);
-        
-    
-            var icon_a233997ce3c1455a61ed21f59f69b248 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "green",
-  "iconColor": "white",
-  "icon": "home",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_a98786b12a6de49849f8ec6ed426f85a = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_82eca12703947cdf62e0ef9d0b3be5d9 = $(`<div id="html_82eca12703947cdf62e0ef9d0b3be5d9" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif;">                 <b>IdCiclo:</b> 3840<br>                 <b>CicloAnterior:</b> 3640<br>                 <b>Dirección:</b> CL 19 KR 12A - 21<br>                 <b>IdContrato:</b> 67675591<br>                 <b>Fecha:</b> 2025-05-14 00:00:00             </div>             </div>`)[0];
-                popup_a98786b12a6de49849f8ec6ed426f85a.setContent(html_82eca12703947cdf62e0ef9d0b3be5d9);
-            
-        
-
-        marker_9dc66e600fad4daf252d2997db7fba25.bindPopup(popup_a98786b12a6de49849f8ec6ed426f85a)
-        ;
-
-        
-    
-    
-                marker_9dc66e600fad4daf252d2997db7fba25.setIcon(icon_a233997ce3c1455a61ed21f59f69b248);
-            
-    
-            var marker_c1c6aab73f0314789bdb74f63dae60f3 = L.marker(
-                [10.607341766357422, -74.27210998535156],
-                {
-}
-            ).addTo(marker_cluster_18a0e76519d981e488fe4655259b7eda);
-        
-    
-            var icon_81ac460241d4b384fe5f146000ba5d59 = L.AwesomeMarkers.icon(
+            var icon_2fb460b3634d346508f3b9435cd24669 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "purple",
   "iconColor": "white",
@@ -350,34 +274,148 @@
             );
         
     
-        var popup_4432066f5cf5deab2a9919e46d64f95d = L.popup({
+        var popup_00a5575e92486595ccbcb8291a8e59f3 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_a90d3a8d66db05e081fa9a0d0102a537 = $(`<div id="html_a90d3a8d66db05e081fa9a0d0102a537" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif;">                 <b>IdCiclo:</b> 4997<br>                 <b>CicloAnterior:</b> 4674<br>                 <b>Dirección:</b> CL 18 KR 3 - 28<br>                 <b>IdContrato:</b> 67679578<br>                 <b>Fecha:</b> 2025-04-28 00:00:00             </div>             </div>`)[0];
-                popup_4432066f5cf5deab2a9919e46d64f95d.setContent(html_a90d3a8d66db05e081fa9a0d0102a537);
+                var html_ec2b8d8db1148deb988492c1edf77446 = $(`<div id="html_ec2b8d8db1148deb988492c1edf77446" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif;">                 <b>IdCiclo:</b> 1010<br>                 <b>CicloAnterior:</b> 5242<br>                 <b>Dirección:</b> KR 6A CL 15 - 189 APTO 1<br>                 <b>IdContrato:</b> 67676399<br>                 <b>Fecha:</b> 2025-05-12 00:00:00             </div>             </div>`)[0];
+                popup_00a5575e92486595ccbcb8291a8e59f3.setContent(html_ec2b8d8db1148deb988492c1edf77446);
             
         
 
-        marker_c1c6aab73f0314789bdb74f63dae60f3.bindPopup(popup_4432066f5cf5deab2a9919e46d64f95d)
+        marker_3b58ae3ed2919ed2778bd894ef95648b.bindPopup(popup_00a5575e92486595ccbcb8291a8e59f3)
         ;
 
         
     
     
-                marker_c1c6aab73f0314789bdb74f63dae60f3.setIcon(icon_81ac460241d4b384fe5f146000ba5d59);
+                marker_3b58ae3ed2919ed2778bd894ef95648b.setIcon(icon_2fb460b3634d346508f3b9435cd24669);
             
     
-            var marker_b336def83367477e185b635254c7a01f = L.marker(
+            var marker_d359c0f19efc4ce1420ffe6e2157e944 = L.marker(
+                [9.791529655456543, -74.77967071533203],
+                {
+}
+            ).addTo(marker_cluster_931d5473b2d2d37a775f016a74b76c68);
+        
+    
+            var icon_bba64af82fc300f475a9e7ba364ce51c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_32d066af5c0fbcfbbd25a23b1454574e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1b876759e58be3aa2050fe0445d93ff = $(`<div id="html_f1b876759e58be3aa2050fe0445d93ff" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif;">                 <b>IdCiclo:</b> 3640<br>                 <b>CicloAnterior:</b> 3840<br>                 <b>Dirección:</b> CL 19 KR 12A - 21<br>                 <b>IdContrato:</b> 67675591<br>                 <b>Fecha:</b> 2025-05-22 00:00:00             </div>             </div>`)[0];
+                popup_32d066af5c0fbcfbbd25a23b1454574e.setContent(html_f1b876759e58be3aa2050fe0445d93ff);
+            
+        
+
+        marker_d359c0f19efc4ce1420ffe6e2157e944.bindPopup(popup_32d066af5c0fbcfbbd25a23b1454574e)
+        ;
+
+        
+    
+    
+                marker_d359c0f19efc4ce1420ffe6e2157e944.setIcon(icon_bba64af82fc300f475a9e7ba364ce51c);
+            
+    
+            var marker_7ec413aa1736384646bde9edd9389d28 = L.marker(
+                [9.791529655456543, -74.77967071533203],
+                {
+}
+            ).addTo(marker_cluster_931d5473b2d2d37a775f016a74b76c68);
+        
+    
+            var icon_973f7b4785e9dafc27c554881072f46f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04e4663fd42dfcee0e8fd656987e5188 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b4c97bd6261b2ef3ced36214d99e70ff = $(`<div id="html_b4c97bd6261b2ef3ced36214d99e70ff" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif;">                 <b>IdCiclo:</b> 3840<br>                 <b>CicloAnterior:</b> 3640<br>                 <b>Dirección:</b> CL 19 KR 12A - 21<br>                 <b>IdContrato:</b> 67675591<br>                 <b>Fecha:</b> 2025-05-14 00:00:00             </div>             </div>`)[0];
+                popup_04e4663fd42dfcee0e8fd656987e5188.setContent(html_b4c97bd6261b2ef3ced36214d99e70ff);
+            
+        
+
+        marker_7ec413aa1736384646bde9edd9389d28.bindPopup(popup_04e4663fd42dfcee0e8fd656987e5188)
+        ;
+
+        
+    
+    
+                marker_7ec413aa1736384646bde9edd9389d28.setIcon(icon_973f7b4785e9dafc27c554881072f46f);
+            
+    
+            var marker_c0d5cbde27da5b9e333712513a42d968 = L.marker(
+                [10.607341766357422, -74.27210998535156],
+                {
+}
+            ).addTo(marker_cluster_931d5473b2d2d37a775f016a74b76c68);
+        
+    
+            var icon_a434a054a6b1935da295abd28d153579 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85016bb165a3939b9de34f8c6aa1891a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1192b26dcb830b254e46fb0905aa004 = $(`<div id="html_e1192b26dcb830b254e46fb0905aa004" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif;">                 <b>IdCiclo:</b> 4997<br>                 <b>CicloAnterior:</b> 4674<br>                 <b>Dirección:</b> CL 18 KR 3 - 28<br>                 <b>IdContrato:</b> 67679578<br>                 <b>Fecha:</b> 2025-04-28 00:00:00             </div>             </div>`)[0];
+                popup_85016bb165a3939b9de34f8c6aa1891a.setContent(html_e1192b26dcb830b254e46fb0905aa004);
+            
+        
+
+        marker_c0d5cbde27da5b9e333712513a42d968.bindPopup(popup_85016bb165a3939b9de34f8c6aa1891a)
+        ;
+
+        
+    
+    
+                marker_c0d5cbde27da5b9e333712513a42d968.setIcon(icon_a434a054a6b1935da295abd28d153579);
+            
+    
+            var marker_c78257c2ced739396ee84ed6c86efb6f = L.marker(
                 [11.127588272094727, -74.22012329101562],
                 {
 }
-            ).addTo(marker_cluster_18a0e76519d981e488fe4655259b7eda);
+            ).addTo(marker_cluster_931d5473b2d2d37a775f016a74b76c68);
         
     
-            var icon_51d95fe6de8012e554798eb7818167dc = L.AwesomeMarkers.icon(
+            var icon_b854677b63923d0fb33ad159b3f4f200 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -388,35 +426,35 @@
             );
         
     
-        var popup_9b4f8cea461623eb9331671230fc518e = L.popup({
+        var popup_a6a4e33f86c40ff03525dfa497ccf7e6 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_1a878e8340814cc2f23af268b9d1d530 = $(`<div id="html_1a878e8340814cc2f23af268b9d1d530" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif;">                 <b>IdCiclo:</b> 5002<br>                 <b>CicloAnterior:</b> 4304<br>                 <b>Dirección:</b> KR 21B CL 41A - 124 APTO 201<br>                 <b>IdContrato:</b> 67701517<br>                 <b>Fecha:</b> 2025-05-14 00:00:00             </div>             </div>`)[0];
-                popup_9b4f8cea461623eb9331671230fc518e.setContent(html_1a878e8340814cc2f23af268b9d1d530);
+                var html_52a445094ab06fb162536e1fc1864cbd = $(`<div id="html_52a445094ab06fb162536e1fc1864cbd" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif;">                 <b>IdCiclo:</b> 5002<br>                 <b>CicloAnterior:</b> 4304<br>                 <b>Dirección:</b> KR 21B CL 41A - 124 APTO 201<br>                 <b>IdContrato:</b> 67701517<br>                 <b>Fecha:</b> 2025-05-14 00:00:00             </div>             </div>`)[0];
+                popup_a6a4e33f86c40ff03525dfa497ccf7e6.setContent(html_52a445094ab06fb162536e1fc1864cbd);
             
         
 
-        marker_b336def83367477e185b635254c7a01f.bindPopup(popup_9b4f8cea461623eb9331671230fc518e)
+        marker_c78257c2ced739396ee84ed6c86efb6f.bindPopup(popup_a6a4e33f86c40ff03525dfa497ccf7e6)
         ;
 
         
     
     
-                marker_b336def83367477e185b635254c7a01f.setIcon(icon_51d95fe6de8012e554798eb7818167dc);
+                marker_c78257c2ced739396ee84ed6c86efb6f.setIcon(icon_b854677b63923d0fb33ad159b3f4f200);
             
     
-            marker_cluster_18a0e76519d981e488fe4655259b7eda.addTo(map_c58ec5121f53bc49f835287bafa6651c);
+            marker_cluster_931d5473b2d2d37a775f016a74b76c68.addTo(map_5f6fcaf5a882241a3432d7fca412533e);
         
     
-            var tile_layer_9bf3fb1ae0b36705c21cf153544a3ce4 = L.tileLayer(
+            var tile_layer_55f65a620fa7fa4bb991ba79ee5b12ff = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
-            var mini_map_2e73a93caa233bdea16817203ee3da52 = new L.Control.MiniMap(
-                tile_layer_9bf3fb1ae0b36705c21cf153544a3ce4,
+            var mini_map_c93f9799d193ac4847c4f0be89246f96 = new L.Control.MiniMap(
+                tile_layer_55f65a620fa7fa4bb991ba79ee5b12ff,
                 {
   "position": "bottomleft",
   "width": 150,
@@ -431,10 +469,10 @@
   "minimized": false,
 }
             );
-            map_c58ec5121f53bc49f835287bafa6651c.addControl(mini_map_2e73a93caa233bdea16817203ee3da52);
+            map_5f6fcaf5a882241a3432d7fca412533e.addControl(mini_map_c93f9799d193ac4847c4f0be89246f96);
         
     
-            var measure_control_a2a65a83ab8a4dbdc9dee7f50354cfb3 = new L.Control.Measure(
+            var measure_control_b2c4d3b0a10ad7b3bfb6cd970e57b3b3 = new L.Control.Measure(
                 {
   "position": "topright",
   "primaryLengthUnit": "meters",
@@ -442,7 +480,7 @@
   "primaryAreaUnit": "sqmeters",
   "secondaryAreaUnit": "acres",
 });
-            map_c58ec5121f53bc49f835287bafa6651c.addControl(measure_control_a2a65a83ab8a4dbdc9dee7f50354cfb3);
+            map_5f6fcaf5a882241a3432d7fca412533e.addControl(measure_control_b2c4d3b0a10ad7b3bfb6cd970e57b3b3);
 
             // Workaround for using this plugin with Leaflet>=1.8.0
             // https://github.com/ljagis/leaflet-measure/issues/171
